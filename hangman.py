@@ -2,6 +2,7 @@ import re
 import random
 
 
+
 def create_word_list(fin):
 	fname = open(fin)
 	words = []
@@ -12,7 +13,6 @@ def create_word_list(fin):
 				words.append(word)	
 
 	fname.close()
-	#print(words)
 	return random.choice(words)
 
 
@@ -57,9 +57,9 @@ def print_remaining_letters(word,found_letters,initial_indices):
 
 
 
+
 #def main():
-fin = input("Enter the name of the file: ")
-word = create_word_list(fin)
+word = create_word_list("words.txt")
 
 print("\n")
 heading = "WELCOME TO THE GAME OF HANGMAN"
